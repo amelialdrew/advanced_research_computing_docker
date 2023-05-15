@@ -18,10 +18,3 @@ COPY . /usr/src/dockertest1
 
 # Specify the working directory
 WORKDIR /usr/src/dockertest1
-
-# Use Clang to compile the Test.cpp source file
-RUN clang++ -o Test Test.cpp
-
-# Run the output program from the previous step
-# CMD ["./Test"]
-CMD ["ipython"]
