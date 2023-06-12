@@ -22,6 +22,9 @@ RUN apt-get -y install emacs
 #Install gdb
 RUN apt-get -y install gdb
 
+#Install Valgrind
+RUN apt-get -y install valgrind
+
 # Copy the current folder which contains C++ source code to the Docker image under /usr/src
 COPY . /usr/src/dockertest1
 
