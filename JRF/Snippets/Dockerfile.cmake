@@ -4,8 +4,10 @@ RUN apk update && apk add \
     git \
     g++ \
     cmake \
-    make
+    make \
+    clang-extra-tools \
+    doxygen
 
-COPY ./ /Snippets/Make
+COPY ./ /Snippets
 
-WORKDIR /Snippets/Make
+WORKDIR /Snippets
