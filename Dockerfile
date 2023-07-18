@@ -28,6 +28,9 @@ RUN apt-get -y install valgrind
 # Install gprof
 RUN apt-get -y install binutils
 
+# Install MPI
+RUN apt-get -y install mpich
+
 # Copy the current folder which contains C++ source code to the Docker image under /usr/src
 COPY . /usr/src/dockertest1
 
