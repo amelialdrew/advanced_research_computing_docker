@@ -31,6 +31,9 @@ RUN apt-get -y install binutils
 # Install MPI
 RUN apt-get -y install mpich
 
+# Install Python mpi4py
+RUN pip3 install mpi4py
+
 # Copy the current folder which contains C++ source code to the Docker image under /usr/src
 COPY . /usr/src/dockertest1
 
