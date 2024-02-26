@@ -2,7 +2,7 @@
 #include <omp.h>
 
 int num_steps = 100000;
-#define NUM_THREADS 2
+#define NUM_THREADS 4
 double step;
 
 int main ()
@@ -21,7 +21,7 @@ int main ()
   int num_threads = omp_get_num_threads();
   int thread_id = omp_get_thread_num();
 
-  printf("Threads: %d, %d\n", num_threads, thread_id); 
+  //  printf("Threads: %d, %d\n", num_threads, thread_id); 
 
   double x;
   int i;
