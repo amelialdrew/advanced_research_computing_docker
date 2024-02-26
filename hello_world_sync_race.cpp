@@ -28,7 +28,7 @@ int main() {
 
     my_calculated_variable = i*i*i;
 
-    //#pragma omp critical    
+#pragma omp critical    
     result += some_calc(my_calculated_variable);
     
   }

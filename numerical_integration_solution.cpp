@@ -8,13 +8,13 @@ double step;
 int main ()
 {
   int i;
-  int global_num_threads;
 
   double pi = 0.;
   double sum[NUM_THREADS] = {0.}; //We need to know the number of threads before runtime, so we can set the size of the array  
   step = 1.0 / num_steps;
 
   omp_set_num_threads(NUM_THREADS);
+  int global_num_threads;
 
 #pragma omp parallel
 {
